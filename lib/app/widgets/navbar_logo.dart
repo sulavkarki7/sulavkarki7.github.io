@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+import 'package:pofo_web/core/res/responsive.dart';
+import 'package:pofo_web/core/theme/app_theme.dart';
+
+class NavBarLogo extends StatelessWidget {
+  const NavBarLogo({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    // theme
+    var theme = Theme.of(context);
+    //
+    var textSty = TextStyle(
+      color: theme.textColor,
+      fontWeight: FontWeight.w100,
+      fontSize: Responsive.isDesktop(context) ? 32 : 20,
+    );
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text("< ", style: textSty),
+        Text("Sulav", style: textSty),
+        Text(Responsive.isDesktop(context) ? " />\t\t" : " />", style: textSty),
+      ],
+    );
+  }
+}
