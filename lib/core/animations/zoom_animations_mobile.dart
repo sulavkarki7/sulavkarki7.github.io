@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:pofo_web/app/widgets/cutsom_outline.dart';
 import 'package:pofo_web/core/theme/app_theme.dart';
 
-class ZoomAnimations extends StatefulWidget {
-  const ZoomAnimations({Key? key}) : super(key: key);
+class ZoomAnimationsMobile extends StatefulWidget {
+  const ZoomAnimationsMobile({Key? key}) : super(key: key);
 
   @override
-  State<ZoomAnimations> createState() => _ZoomAnimationsState();
+  State<ZoomAnimationsMobile> createState() => _ZoomAnimationsState();
 }
 
-class _ZoomAnimationsState extends State<ZoomAnimations>
+class _ZoomAnimationsState extends State<ZoomAnimationsMobile>
     with TickerProviderStateMixin {
   late AnimationController _controller;
   late AnimationController _controller2;
@@ -25,7 +25,7 @@ class _ZoomAnimationsState extends State<ZoomAnimations>
       duration: const Duration(seconds: 4),
     );
 
-    sizeAnimation = Tween(begin: 0.0, end: 0.2).animate(
+    sizeAnimation = Tween(begin: 0.0, end: 0.4).animate(
       CurvedAnimation(
         parent: _controller,
         curve: const Interval(0.40, 0.75, curve: Curves.easeOut),
@@ -62,13 +62,13 @@ class _ZoomAnimationsState extends State<ZoomAnimations>
     var theme = Theme.of(context);
 
     return SizedBox(
-      width: size.width / 4,
-      height: size.width / 4,
+      width: size.width / 2.2,
+      height: size.width / 2.2,
       child: AlignTransition(
         alignment: _alignAnimation,
         child: CustomOutline(
           strokeWidth: 5,
-          radius: size.width * 0.2,
+          radius: size.width * 0.3,
           padding: const EdgeInsets.all(5),
           width: size.width * sizeAnimation.value,
           height: size.width * sizeAnimation.value,
@@ -91,8 +91,8 @@ class _ZoomAnimationsState extends State<ZoomAnimations>
                 fit: BoxFit.cover,
                 alignment: Alignment.bottomLeft,
 
-                // image: AssetImage('assets/imgs/IMG_0109.png'),
-                image: AssetImage('assets/imgs/Convocation_PP2.jpg'),
+                image: AssetImage('assets/imgs/IMG_0109.png'),
+                // image: AssetImage('assets/imgs/ppp.png'),
               ),
             ),
           ),

@@ -7,6 +7,7 @@ import 'package:pofo_web/changes/links.dart';
 import 'package:pofo_web/changes/strings.dart';
 import 'package:pofo_web/core/animations/entrance_fader.dart';
 import 'package:pofo_web/core/animations/zoom_animations.dart';
+import 'package:pofo_web/core/animations/zoom_animations_mobile.dart';
 import 'package:pofo_web/core/configs/other/app_typography.dart';
 import 'package:pofo_web/core/configs/other/space.dart';
 import 'package:pofo_web/core/res/responsive_size.dart';
@@ -74,11 +75,12 @@ class HomeMobile extends StatelessWidget {
                   html.window.open(resume, "pdf");
                 },
               ),
+
               const EntranceFader(
                 offset: Offset(0, 0),
                 delay: Duration(seconds: 1),
                 duration: Duration(milliseconds: 800),
-                child: ZoomAnimations(),
+                child: ZoomAnimationsMobile(),
               ),
             ],
           ),

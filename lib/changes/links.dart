@@ -1,7 +1,8 @@
 // CV
 const String resume =
-    // 'https://drive.google.com/file/d/1bDNNrkQtNVJbXcdwMSx0crQQvAF_nMwV/view?usp=sharing';
-    'https://drive.google.com/file/d/1cxTAYnI19BTUG4ivEJqaKMGwSjzqZYqJ/view?usp=sharing';
+    // 'https://drive.google.com/file/d/1GcIpwkqMNH5V-820bZDwqqbWYPUX2Z6h/view?usp=sharing';
+    // 'https://drive.google.com/file/d/14yDSb__VA79kjrGRfd0Gp7LIYJhozrud/view?usp=sharing';
+    'https://drive.google.com/file/d/11KBlXUJgNglWixuBb5MRtMwtlZpdxD4c/view?usp=sharing';
 
 // Github Link
 const String gitHub = 'https://github.com/sulavkarki7';

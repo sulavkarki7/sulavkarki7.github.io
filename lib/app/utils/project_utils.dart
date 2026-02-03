@@ -14,14 +14,14 @@ class ProjectUtils {
 }
 
 List<ProjectUtils> projectUtils = [
-  ProjectUtils(
-    banners: 'assets/imgs/02.png',
-    icons: 'assets/imgs/flutter.png',
-    titles: 'Awesome Social Media App',
-    description:
-        'This is a just Fully functional Social media App by using flutter, source code is also available, check below.',
-    links: 'https://github.com/sulavkarki7/Cash-Care.git',
-  ),
+  // ProjectUtils(
+  //   banners: 'assets/imgs/02.png',
+  //   icons: 'assets/imgs/flutter.png',
+  //   titles: 'Awesome Social Media App',
+  //   description:
+  //       'This is a just Fully functional Social media App by using flutter, source code is also available, check below.',
+  //   links: 'https://github.com/sulavkarki7/Cash-Care.git',
+  // ),
   ProjectUtils(
     banners: 'assets/imgs/CashCare1.png',
     icons: 'assets/imgs/flutter.png',
