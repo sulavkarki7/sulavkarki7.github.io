@@ -19,10 +19,12 @@ samples, guidance on mobile development, and a full API reference.
 
 for publishing 
 
-flutter clean
+flutter clean   
 flutter pub get 
 
-flutter build web --base-href /sulavkarki7.github.io/ --release
+flutter build web --base-href /sulavkarki7.github.io/ --release  
+
+flutter build web --base-href /
 
 flutter build web --base-href /// --release
 echo "www.sulavkarki7.com.np" > build/web/CNAME
